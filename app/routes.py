@@ -1,7 +1,6 @@
 from app import app
 import urllib
 import time
-import math
 from app import firebase
 from app import requests
 @app.route('/')
@@ -57,6 +56,6 @@ def index():
                     print(item)
                     firebase.post("/something",item)
 
-    return "Thanksear"
+    return "Thanks"
 
 
