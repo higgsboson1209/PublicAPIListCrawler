@@ -10,7 +10,7 @@ of public apis that can be used and store them into a database.
 - [x] Crawled all API entries for all categories and stored it in a database
 
 ## How To Run My Code
-My Code is now dockerized and can be run using the dockerfile in my codebase. Please Note there is no need for you to setup any database since the firebase is linked directly to my code as a link. Thus all the results are being added to my database table. To make this work on your firebase table change the firebase link near the import section, and put your link. Please use a real time database link as this is whatt I have used
+My Code is now dockerized and can be run using the dockerfile in my codebase. Please Note there is no need for you to setup any database since the firebase is linked directly to my code as a link. Thus all the results are being added to my database table. To make this work on your firebase table change the firebase link near the import section, and put your link. Please use a real time database link as this is what I have used
 
 ## My Tables
 I have used a NoSQL database because integration of firebase was really simple, and there is no need to do it locally as all of it is done online,
