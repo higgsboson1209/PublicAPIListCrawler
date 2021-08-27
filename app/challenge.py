@@ -68,7 +68,8 @@ def main():
                 #Can be modified later to make it more efficient
                 if Number_Of_Requests==9:
                     time.sleep(60)
-                    Number_Of_Requests=0
+                    headers=Data_requests.Get_Auth_Token()
+                    Number_Of_Requests=1
 
                 request3=Data_requests.Get_Api_Data(parameters,headers)
 
@@ -85,11 +86,11 @@ def main():
                 #We break out of this loop once all API's of a category have been added to our database
                 if (j-1)*10 + len(request3['categories'])>request3['count']:
                     break
-
-
+                #Going through the api data one by one and pushing them as rows to my firebase
                 for api in request3['categories']:
                     firebase.post("/API-DATA",api)
 
 
 if __name__=="__main__":
     main()
+
