@@ -31,3 +31,5 @@ Name of API | Authorization Token Type | Category | Cross Origin Resource Sharin
 
 - Split data into multiple table and make them SQL based to ensure easy querying of data
 - Use a better way to overcome server limit rather than wait for 60 seconds after 10 queries, can be implemented easily by keeping track of time 
+  - Use a try catch block and use backoff exponentiation to handle rate limiting 
+   
